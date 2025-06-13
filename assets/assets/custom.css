@@ -106,3 +106,5 @@
   }
 }
 <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
+<script src="{{ 'custom.js' | asset_url }}"></script>
+
