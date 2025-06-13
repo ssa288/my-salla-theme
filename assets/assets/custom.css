@@ -105,3 +105,4 @@
     max-width: 300px;
   }
 }
+<link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
