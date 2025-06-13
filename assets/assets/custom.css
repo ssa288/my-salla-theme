@@ -1,1 +1,107 @@
 /* Custom CSS will be added here */
+.furniture-section {
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #666;
+}
+
+.catalog-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero-image {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.label {
+  position: absolute;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.label.top { top: 10%; left: 10%; }
+.label.middle { top: 40%; left: 20%; }
+.label.bottom { bottom: 10%; left: 30%; }
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.chair-card {
+  width: 160px;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.chair-card:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.chair-card img {
+  width: 100%;
+  display: block;
+}
+
+.chair-card h3 {
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* تصميم للجوال */
+@media (max-width: 600px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .chair-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
